@@ -14,6 +14,12 @@ Material UI – Enhancing the aesthetic appeal with modern components
 # Features
 
 ✅ Home Page – A visually appealing landing page introducing my work
+
+
 ✅ Projects Page – A dedicated section showcasing my projects and contributions
+
+
 ✅ About Me Page – Insight into my background, skills, and experience
+
+
 ✅ Contact Page – Integrated with Google Forms for seamless inquiries
