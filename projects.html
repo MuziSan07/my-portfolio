@@ -1,106 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Ali Basit</title>
+  <meta name="description" content="AI and full-stack projects by Ali Basit — LLMs, computer vision, NLP, web apps, and more." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>" />
 </head>
 <body>
+  <nav>
+    <a href="index.html" class="nav-brand">Ali <span>Basit</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-hire">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html">Hire Me</a>
+  </div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <!-- <a class="navbar-brand" href="index.html">My Portfolio</a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
-                </ul>
+  <main class="page">
+    <div class="wrap projects-page">
+
+      <div class="sec-header reveal">
+        <span class="sec-kicker">Portfolio</span>
+        <h1 class="sec-title">My <em style="font-style:italic;color:var(--gold);">Projects</em></h1>
+        <div class="sec-rule"></div>
+        <p class="sec-desc">
+          A curated selection of AI systems, full-stack applications, and research-grade engineering work.
+        </p>
+      </div>
+
+      <!-- Filter buttons -->
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="nlp">NLP</button>
+        <button class="filter-btn" data-filter="cv">Computer Vision</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- 1 -->
+        <div class="card proj-card reveal" data-cat="ai nlp">
+          <div class="proj-header">
+            <div class="proj-icon">🤖</div>
+            <div class="proj-links">
+              <a href="https://github.com/MuziSan07" target="_blank" class="proj-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
             </div>
+          </div>
+          <p class="proj-name">AI Humanizer</p>
+          <p class="proj-desc">Transforms AI-generated text into natural, human-like content using Qwen-Coder-32B via the Groq API. Enhances readability, tone, and fluency while preserving the original meaning and context.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">Streamlit</span>
+            <span class="proj-tag">Groq API</span>
+            <span class="proj-tag">LLM</span>
+            <span class="proj-tag">NLP</span>
+          </div>
         </div>
-    </nav>
 
-    <!-- Projects Section -->
-    <section class="container mt-5">
-        <h2 class="text-center">My Projects</h2>
-        <p class="text-center">Here are some of my latest projects.</p>
-
-        <div class="row">
-            <!-- Project 1 -->
-            <div class="col-md-4">
-                <div class="card shadow-lg">
-                    <img src="assets/images/AI Humanizer.PNG" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">AI Humanizer</h5>
-                        <p class="card-text">
-                            AI Humanizer uses Qwen-Coder-32B to refine AI-generated text, making it more natural and human-like. It enhances readability, tone, and fluency while preserving meaning..</p>
-                        <div class="d-flex gap-2">
-                            <span class="badge bg-primary">Python</span>
-                            <span class="badge bg-success">Streamlit</span>
-                            <span class="badge bg-warning text-dark">Groq API</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- 2 -->
+        <div class="card proj-card reveal reveal-delay-1" data-cat="ai nlp">
+          <div class="proj-header">
+            <div class="proj-icon">🎙️</div>
+            <div class="proj-links">
+              <a href="https://github.com/MuziSan07" target="_blank" class="proj-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
             </div>
-
-            <!-- Project 2 -->
-            <div class="col-md-4">
-                <div class="card shadow-lg">
-                    <img src="assets/images/download.png" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Musketeer Chess NNUE Fairy Stockfish Variant</h5>
-                        <p class="card-text">An NNUE model for Fairy Stockfish to enhance AI gameplay in Musketeer Chess, integrating unique fairy pieces for improved strategy.
-                        </p>
-                        <div class="d-flex gap-2">
-                            <span class="badge bg-primary">Pytorch</span>
-                            <span class="badge bg-danger">NNUE Fairy StockFish</span>
-                            <span class="badge bg-info">Bezta Notations</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="col-md-4">
-                <div class="card shadow-lg">
-                    <img src="assets/images/CMS.png" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Content Management System (CMS)</h5>
-                        <p class="card-text">Building a custom CMS for seamless content creation, editing, and management, with strong security and an intuitive user experience with completly dynamic experience</p>
-                        <div class="d-flex gap-2">
-                            <span class="badge bg-primary">Django</span>
-                            <span class="badge bg-success">Bootstrap</span>
-                            <span class="badge bg-warning text-dark">Django Rest Framework</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <p class="proj-name">Darija AI — Arabic Transcription</p>
+          <p class="proj-desc">Deployed an Arabic transcription model with a full management dashboard featuring token-based usage, rate limiting, and API key management. Improved model accuracy by 15% through hyperparameter optimization.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">FastAPI</span>
+            <span class="proj-tag">HuggingFace</span>
+            <span class="proj-tag">Transformers</span>
+            <span class="proj-tag">Jinja2</span>
+            <span class="proj-tag">Speech AI</span>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p>&copy; 2025 Ali Basit. All Rights Reserved.</p>
-    </footer>
+        <!-- 3 -->
+        <div class="card proj-card reveal reveal-delay-2" data-cat="ai">
+          <div class="proj-header">
+            <div class="proj-icon">♟️</div>
+            <div class="proj-links">
+              <a href="https://github.com/MuziSan07" target="_blank" class="proj-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="proj-name">Musketeer Chess NNUE</p>
+          <p class="proj-desc">Developed a neural network evaluation (NNUE) model for Fairy Stockfish to enhance AI gameplay in Musketeer Chess. Contributed custom architectures and data annotation for Generative AI enhancements.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">PyTorch</span>
+            <span class="proj-tag">NNUE</span>
+            <span class="proj-tag">Fairy Stockfish</span>
+            <span class="proj-tag">C++</span>
+            <span class="proj-tag">Deep Learning</span>
+          </div>
+        </div>
 
-    <!-- Bootstrap & jQuery Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+        <!-- 4 -->
+        <div class="card proj-card reveal" data-cat="ai nlp web">
+          <div class="proj-header">
+            <div class="proj-icon">📧</div>
+            <div class="proj-links">
+              <a href="https://github.com/MuziSan07" target="_blank" class="proj-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="proj-name">Email Data Extraction AI</p>
+          <p class="proj-desc">AI-powered tool that extracts structured business contact details from emails using Groq's OSS-120B model via FastAPI. Stores extracted data in SQLite with a web interface and admin panel.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">FastAPI</span>
+            <span class="proj-tag">Groq API</span>
+            <span class="proj-tag">SQLite</span>
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">LLM</span>
+          </div>
+        </div>
 
+        <!-- 5 -->
+        <div class="card proj-card reveal reveal-delay-1" data-cat="web">
+          <div class="proj-header">
+            <div class="proj-icon">📰</div>
+            <div class="proj-links">
+              <a href="https://github.com/MuziSan07" target="_blank" class="proj-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="proj-name">Content Management System</p>
+          <p class="proj-desc">Custom CMS built with Django and Django REST Framework for seamless content creation, editing, and management. Features role-based access control, a dynamic UI, and a clean admin experience.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Django</span>
+            <span class="proj-tag">DRF</span>
+            <span class="proj-tag">PostgreSQL</span>
+            <span class="proj-tag">Bootstrap</span>
+            <span class="proj-tag">REST API</span>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="card proj-card reveal reveal-delay-2" data-cat="ai cv">
+          <div class="proj-header">
+            <div class="proj-icon">👁️</div>
+            <div class="proj-links">
+              <a href="https://github.com/MuziSan07" target="_blank" class="proj-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="proj-name">Computer Vision Pipeline</p>
+          <p class="proj-desc">End-to-end computer vision pipeline for object detection and image classification using custom CNN architectures. Trained and deployed with TensorFlow and OpenCV for production inference.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">TensorFlow</span>
+            <span class="proj-tag">OpenCV</span>
+            <span class="proj-tag">CNN</span>
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">Deep Learning</span>
+          </div>
+        </div>
+
+      </div><!-- /projects-grid -->
+
+      <!-- CTA -->
+      <div class="reveal" style="margin-top:4rem;padding:3rem;background:var(--bg-card);border:1px solid var(--line);border-radius:14px;text-align:center;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);"></div>
+        <p style="font-family:var(--ff-mono);font-size:0.7rem;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.7rem;">Let's Build Something</p>
+        <h3 style="font-family:var(--ff-serif);font-size:1.8rem;font-weight:600;margin-bottom:0.7rem;">Have a project in mind?</h3>
+        <p style="color:var(--mid);font-size:0.95rem;max-width:440px;margin:0 auto 2rem;line-height:1.8;">
+          Whether it's an AI product, a web platform, or an automation system — I can help you build it right.
+        </p>
+        <a href="contact.html" class="btn btn-gold">Start a Conversation →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <div class="footer-left">Ali <span>Basit</span></div>
+        <div class="footer-center">© 2025 Ali Basit. All rights reserved.</div>
+        <div class="footer-right">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="assets/media/Ali_Basit_CV.pdf" download>CV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Filter logic
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.proj-card').forEach(card => {
+          const cats = card.dataset.cat || '';
+          const show = filter === 'all' || cats.includes(filter);
+          card.style.display = show ? 'flex' : 'none';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
