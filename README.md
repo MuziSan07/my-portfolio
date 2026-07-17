@@ -1,25 +1,42 @@
-# My Portfolio
-Welcome to my Portfolio Website, a sleek and responsive web portfolio showcasing my work, skills, and projects. Built with modern web technologies, this portfolio provides an engaging user experience across all devices.
+# Ali Basit — Portfolio
 
-# Technologies Used
-HTML, CSS, JavaScript – For structuring, styling, and interactivity
+A personal portfolio for Ali Basit, an AI and full-stack engineer. It's a small,
+fast static site with no build step and no framework dependencies.
 
-jQuery – For dynamic elements and smooth UI interactions
+## Built with
 
-Bootstrap – Ensuring a responsive and mobile-friendly design
+- HTML, CSS, and vanilla JavaScript
+- No frameworks, no bundler — just static files
+- Google Fonts (Cormorant Garamond, DM Sans, DM Mono)
 
-Material UI – Enhancing the aesthetic appeal with modern components
+## Pages
 
+- **Home** — intro, what I do, featured projects, and video testimonials
+- **Projects** — filterable grid of AI, web, automation, and data-science work
+- **About** — background, experience, skills, and credentials
+- **Contact** — ways to reach me, an FAQ, and client testimonials
 
-# Features
+## Structure
 
-✅ Home Page – A visually appealing landing page introducing my work
+```
+.
+├── index.html
+├── about.html
+├── projects.html
+├── contact.html
+└── assets/
+    ├── css/style.css
+    ├── js/main.js
+    ├── images/
+    └── media/        (CV and testimonial videos)
+```
 
+## Running locally
 
-✅ Projects Page – A dedicated section showcasing my projects and contributions
+It's a static site, so just open `index.html` in a browser, or serve the folder:
 
+```bash
+python -m http.server 8000
+```
 
-✅ About Me Page – Insight into my background, skills, and experience
-
-
-✅ Contact Page – Integrated with Google Forms for seamless inquiries
+Then visit `http://localhost:8000`.

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects — Ali Basit</title>
-  <meta name="description" content="AI and full-stack projects by Ali Basit — LLMs, computer vision, NLP, web apps, and more." />
+  <title>Projects · Ali Basit</title>
+  <meta name="description" content="AI and full-stack projects by Ali Basit: LLM agents, trading bots, transcription systems, and web platforms." />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230d0f12'/><text x='50' y='70' font-size='60' font-family='Georgia,serif' fill='%23c8a96e' text-anchor='middle'>A</text></svg>" />
 </head>
 <body>
   <nav>
@@ -38,144 +38,265 @@
         <h1 class="sec-title">My <em style="font-style:italic;color:var(--gold);">Projects</em></h1>
         <div class="sec-rule"></div>
         <p class="sec-desc">
-          A curated selection of AI systems, full-stack applications, and research-grade engineering work.
+          A selection of things I've built: LLM agents, automation bots, transcription
+          systems, and web platforms. Most are open source on GitHub.
         </p>
       </div>
 
       <!-- Filter buttons -->
       <div class="project-filters reveal">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="ai">AI / ML</button>
-        <button class="filter-btn" data-filter="web">Web Dev</button>
-        <button class="filter-btn" data-filter="nlp">NLP</button>
-        <button class="filter-btn" data-filter="cv">Computer Vision</button>
+        <button class="filter-btn" data-filter="ai">AI &amp; ML</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="automation">Automation</button>
+        <button class="filter-btn" data-filter="data">Data Science</button>
       </div>
 
       <div class="projects-grid" id="projects-grid">
 
-        <!-- 1 -->
-        <div class="card proj-card reveal" data-cat="ai nlp">
+        <!-- WhatsApp AI Assistant -->
+        <div class="card proj-card reveal" data-cat="ai automation">
           <div class="proj-header">
-            <div class="proj-icon">🤖</div>
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.5 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"/></svg>
+            </div>
             <div class="proj-links">
-              <a href="https://github.com/MuziSan07" target="_blank" class="proj-link" title="GitHub">
+              <a href="https://github.com/MuziSan07/varun-agent" target="_blank" rel="noopener" class="proj-link" title="GitHub">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
               </a>
             </div>
           </div>
-          <p class="proj-name">AI Humanizer</p>
-          <p class="proj-desc">Transforms AI-generated text into natural, human-like content using Qwen-Coder-32B via the Groq API. Enhances readability, tone, and fluency while preserving the original meaning and context.</p>
+          <p class="proj-name">WhatsApp AI Assistant</p>
+          <p class="proj-desc">A personal assistant you message on WhatsApp by text or voice note, in English, Hindi, or Hinglish. It books Uber rides, messages contacts, sends reminders, and even calls someone who doesn't reply. Claude handles the reasoning; Whisper transcribes voice; Twilio moves the messages.</p>
           <div class="proj-tags">
-            <span class="proj-tag">Python</span>
-            <span class="proj-tag">Streamlit</span>
-            <span class="proj-tag">Groq API</span>
-            <span class="proj-tag">LLM</span>
-            <span class="proj-tag">NLP</span>
+            <span class="proj-tag">Node.js</span>
+            <span class="proj-tag">Claude</span>
+            <span class="proj-tag">Whisper</span>
+            <span class="proj-tag">Twilio</span>
+            <span class="proj-tag">Express</span>
           </div>
         </div>
 
-        <!-- 2 -->
-        <div class="card proj-card reveal reveal-delay-1" data-cat="ai nlp">
+        <!-- Momentum Trading Bot -->
+        <div class="card proj-card reveal reveal-delay-1" data-cat="ai automation">
           <div class="proj-header">
-            <div class="proj-icon">🎙️</div>
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M21 8v4h-4"/></svg>
+            </div>
             <div class="proj-links">
-              <a href="https://github.com/MuziSan07" target="_blank" class="proj-link" title="GitHub">
+              <a href="https://github.com/MuziSan07/trading-alpaca" target="_blank" rel="noopener" class="proj-link" title="GitHub">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
               </a>
             </div>
           </div>
-          <p class="proj-name">Darija AI — Arabic Transcription</p>
-          <p class="proj-desc">Deployed an Arabic transcription model with a full management dashboard featuring token-based usage, rate limiting, and API key management. Improved model accuracy by 15% through hyperparameter optimization.</p>
+          <p class="proj-name">Momentum Trading Bot</p>
+          <p class="proj-desc">An automated penny-stock day-trading bot for Alpaca. Each premarket it scans the most active stocks, filters for genuine momentum, runs an AI sanity check, and sizes positions behind hard risk rules like one trade per day and a PDT guard. Ships with CI and runs on paper money by default.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">Alpaca API</span>
+            <span class="proj-tag">Ollama / Claude</span>
+            <span class="proj-tag">CI</span>
+          </div>
+        </div>
+
+        <!-- AI Content Humanizer -->
+        <div class="card proj-card reveal reveal-delay-2" data-cat="ai">
+          <div class="proj-header">
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 12h16M4 19h9"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/MuziSan07/AI-Humanizer" target="_blank" rel="noopener" class="proj-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="proj-name">AI Content Humanizer</p>
+          <p class="proj-desc">A Streamlit app that rewrites AI-generated text into natural, conversational writing while keeping the original meaning intact. A custom system prompt handles tone and clarity; LLaMA 3.1 via the Groq API keeps responses fast.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">Streamlit</span>
+            <span class="proj-tag">Groq</span>
+            <span class="proj-tag">LLaMA 3.1</span>
+          </div>
+        </div>
+
+        <!-- Wabi Sabi GEO -->
+        <div class="card proj-card reveal" data-cat="ai web">
+          <div class="proj-header">
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/MuziSan07/WabiSabiGEO" target="_blank" rel="noopener" class="proj-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="proj-name">Wabi Sabi GEO Engine</p>
+          <p class="proj-desc">A Streamlit tool for Generative Engine Optimization: it crawls pages with Firecrawl, uses LLMs to rework content so it surfaces well in AI answers, logs results to Google Sheets, and pings IndexNow so search engines pick up changes fast.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Streamlit</span>
+            <span class="proj-tag">Firecrawl</span>
+            <span class="proj-tag">Groq</span>
+            <span class="proj-tag">Anthropic</span>
+          </div>
+        </div>
+
+        <!-- ATS Resume Generator -->
+        <div class="card proj-card reveal reveal-delay-1" data-cat="ai">
+          <div class="proj-header">
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/MuziSan07/AI-Resume-Generator" target="_blank" rel="noopener" class="proj-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="proj-name">ATS Resume Generator</p>
+          <p class="proj-desc">Builds ATS-friendly resumes tailored to a specific job posting. It reads the job description, pulls out the keywords that matter, and produces clean TXT and PDF output. Runs on LLaMA 3.3 70B via Groq with LangChain; PDFs are rendered with ReportLab.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Streamlit</span>
+            <span class="proj-tag">LangChain</span>
+            <span class="proj-tag">Groq</span>
+            <span class="proj-tag">ReportLab</span>
+          </div>
+        </div>
+
+        <!-- HIPAA Medical Chatbot -->
+        <div class="card proj-card reveal reveal-delay-2" data-cat="ai web">
+          <div class="proj-header">
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M12 8.5v5M9.5 11h5"/></svg>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/MuziSan07/HIPAA-Medical-Chatbot" target="_blank" rel="noopener" class="proj-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="proj-name">HIPAA Medical Chatbot</p>
+          <p class="proj-desc">A medical Q&amp;A chatbot designed to answer health questions without storing personal health information. FastAPI serves a LangChain pipeline running on Groq, with a responsive Bootstrap chat interface on the front end.</p>
           <div class="proj-tags">
             <span class="proj-tag">FastAPI</span>
-            <span class="proj-tag">HuggingFace</span>
+            <span class="proj-tag">LangChain</span>
+            <span class="proj-tag">Groq</span>
+            <span class="proj-tag">Bootstrap</span>
+          </div>
+        </div>
+
+        <!-- Arabic Transcription Dashboard -->
+        <div class="card proj-card reveal" data-cat="ai web">
+          <div class="proj-header">
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></svg>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/MuziSan07/AI-Token-Dashboard" target="_blank" rel="noopener" class="proj-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="proj-name">Arabic Transcription Dashboard</p>
+          <p class="proj-desc">A transcription service for Darija (Moroccan Arabic) with a management dashboard on top: token-based usage tracking, rate limiting, and API key management. Built with FastAPI around a Hugging Face Transformers model.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">FastAPI</span>
+            <span class="proj-tag">Hugging Face</span>
             <span class="proj-tag">Transformers</span>
-            <span class="proj-tag">Jinja2</span>
             <span class="proj-tag">Speech AI</span>
           </div>
         </div>
 
-        <!-- 3 -->
-        <div class="card proj-card reveal reveal-delay-2" data-cat="ai">
+<!-- HNS Travels -->
+        <div class="card proj-card reveal reveal-delay-2" data-cat="web">
           <div class="proj-header">
-            <div class="proj-icon">♟️</div>
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2.2 5.3-5.3 2.2 2.2-5.3z"/></svg>
+            </div>
             <div class="proj-links">
-              <a href="https://github.com/MuziSan07" target="_blank" class="proj-link" title="GitHub">
+              <a href="https://hnstravel.com.pk" target="_blank" rel="noopener" class="proj-link" title="Live site">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7M21 3l-9 9M19 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg>
+              </a>
+              <a href="https://github.com/MuziSan07/HNS-Travels" target="_blank" rel="noopener" class="proj-link" title="GitHub">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
               </a>
             </div>
           </div>
-          <p class="proj-name">Musketeer Chess NNUE</p>
-          <p class="proj-desc">Developed a neural network evaluation (NNUE) model for Fairy Stockfish to enhance AI gameplay in Musketeer Chess. Contributed custom architectures and data annotation for Generative AI enhancements.</p>
+          <p class="proj-name">HNS Travels</p>
+          <p class="proj-desc">A live website for a Pakistani travel agency, covering tour packages, destinations, and enquiries. Hand-built with plain HTML, CSS, and JavaScript, and deployed to a custom domain at hnstravel.com.pk.</p>
           <div class="proj-tags">
-            <span class="proj-tag">PyTorch</span>
-            <span class="proj-tag">NNUE</span>
-            <span class="proj-tag">Fairy Stockfish</span>
-            <span class="proj-tag">C++</span>
-            <span class="proj-tag">Deep Learning</span>
+            <span class="proj-tag">HTML</span>
+            <span class="proj-tag">CSS</span>
+            <span class="proj-tag">JavaScript</span>
+            <span class="proj-tag">Live</span>
           </div>
         </div>
 
-        <!-- 4 -->
-        <div class="card proj-card reveal" data-cat="ai nlp web">
+        <!-- Content Management System -->
+        <div class="card proj-card reveal" data-cat="web">
           <div class="proj-header">
-            <div class="proj-icon">📧</div>
-            <div class="proj-links">
-              <a href="https://github.com/MuziSan07" target="_blank" class="proj-link" title="GitHub">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-              </a>
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg>
             </div>
-          </div>
-          <p class="proj-name">Email Data Extraction AI</p>
-          <p class="proj-desc">AI-powered tool that extracts structured business contact details from emails using Groq's OSS-120B model via FastAPI. Stores extracted data in SQLite with a web interface and admin panel.</p>
-          <div class="proj-tags">
-            <span class="proj-tag">FastAPI</span>
-            <span class="proj-tag">Groq API</span>
-            <span class="proj-tag">SQLite</span>
-            <span class="proj-tag">Python</span>
-            <span class="proj-tag">LLM</span>
-          </div>
-        </div>
-
-        <!-- 5 -->
-        <div class="card proj-card reveal reveal-delay-1" data-cat="web">
-          <div class="proj-header">
-            <div class="proj-icon">📰</div>
             <div class="proj-links">
-              <a href="https://github.com/MuziSan07" target="_blank" class="proj-link" title="GitHub">
+              <a href="https://github.com/MuziSan07" target="_blank" rel="noopener" class="proj-link" title="GitHub">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
               </a>
             </div>
           </div>
           <p class="proj-name">Content Management System</p>
-          <p class="proj-desc">Custom CMS built with Django and Django REST Framework for seamless content creation, editing, and management. Features role-based access control, a dynamic UI, and a clean admin experience.</p>
+          <p class="proj-desc">A custom CMS for creating and managing content, built with Django and Django REST Framework. Includes role-based access control, a dynamic editing interface, and a clean admin experience for non-technical users.</p>
           <div class="proj-tags">
             <span class="proj-tag">Django</span>
             <span class="proj-tag">DRF</span>
             <span class="proj-tag">PostgreSQL</span>
             <span class="proj-tag">Bootstrap</span>
-            <span class="proj-tag">REST API</span>
           </div>
         </div>
 
-        <!-- 6 -->
-        <div class="card proj-card reveal reveal-delay-2" data-cat="ai cv">
+        <!-- Image Metadata Optimizer -->
+        <div class="card proj-card reveal reveal-delay-1" data-cat="automation">
           <div class="proj-header">
-            <div class="proj-icon">👁️</div>
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
             <div class="proj-links">
-              <a href="https://github.com/MuziSan07" target="_blank" class="proj-link" title="GitHub">
+              <a href="https://github.com/MuziSan07/img-metadata-editor" target="_blank" rel="noopener" class="proj-link" title="GitHub">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
               </a>
             </div>
           </div>
-          <p class="proj-name">Computer Vision Pipeline</p>
-          <p class="proj-desc">End-to-end computer vision pipeline for object detection and image classification using custom CNN architectures. Trained and deployed with TensorFlow and OpenCV for production inference.</p>
+          <p class="proj-name">Image Metadata Optimizer</p>
+          <p class="proj-desc">A Streamlit utility for image-heavy freelance work. It strips old EXIF and writes fresh IPTC metadata (title, author, keywords, description, rating) into JPEGs, and batch-renames files with auto-numbering.</p>
           <div class="proj-tags">
-            <span class="proj-tag">TensorFlow</span>
-            <span class="proj-tag">OpenCV</span>
-            <span class="proj-tag">CNN</span>
             <span class="proj-tag">Python</span>
-            <span class="proj-tag">Deep Learning</span>
+            <span class="proj-tag">Streamlit</span>
+            <span class="proj-tag">Pillow</span>
+            <span class="proj-tag">piexif</span>
+          </div>
+        </div>
+
+        <!-- Galaxy Morphological Classification -->
+        <div class="card proj-card reveal reveal-delay-2" data-cat="data ai">
+          <div class="proj-header">
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/MuziSan07/Galaxy-Morphological-Classification." target="_blank" rel="noopener" class="proj-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="proj-name">Galaxy Morphological Classification</p>
+          <p class="proj-desc">A deep-learning notebook that classifies galaxies by shape and size from telescope imagery. Covers the full workflow from data preparation and augmentation to training and evaluating a convolutional neural network.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">CNN</span>
+            <span class="proj-tag">TensorFlow</span>
+            <span class="proj-tag">Jupyter</span>
           </div>
         </div>
 
@@ -187,9 +308,9 @@
         <p style="font-family:var(--ff-mono);font-size:0.7rem;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.7rem;">Let's Build Something</p>
         <h3 style="font-family:var(--ff-serif);font-size:1.8rem;font-weight:600;margin-bottom:0.7rem;">Have a project in mind?</h3>
         <p style="color:var(--mid);font-size:0.95rem;max-width:440px;margin:0 auto 2rem;line-height:1.8;">
-          Whether it's an AI product, a web platform, or an automation system — I can help you build it right.
+          Whether it's an AI product, a web platform, or an automation that saves you hours, I'm happy to help you build it.
         </p>
-        <a href="contact.html" class="btn btn-gold">Start a Conversation →</a>
+        <a href="contact.html" class="btn btn-gold">Start a Conversation</a>
       </div>
 
     </div>
@@ -199,7 +320,7 @@
     <div class="wrap">
       <div class="footer-inner">
         <div class="footer-left">Ali <span>Basit</span></div>
-        <div class="footer-center">© 2025 Ali Basit. All rights reserved.</div>
+        <div class="footer-center">© 2026 Ali Basit. All rights reserved.</div>
         <div class="footer-right">
           <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
